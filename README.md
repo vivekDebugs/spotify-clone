@@ -14,7 +14,7 @@ Runs the app in the development mode
 
 Builds the app for production to the `build` folder
 
-# Sneak Peek
+## Sneak Peek
 
 ![Spotify Login](https://user-images.githubusercontent.com/49686162/127441910-f870467e-c1f2-48d2-85e7-f9fed05d9f0f.png)
 
