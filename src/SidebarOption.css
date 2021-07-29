@@ -1,0 +1,25 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: color .2s ease-in;
+}
+
+.sidebarOption:hover {
+    color: white;
+}
+
+.sidebarOption__icon {
+    margin: 0 .5rem;
+}
+
+.sidebarOption > h4 {
+    font-weight: 700;
+}
+
+.sidebarOption > p {
+    margin: .75rem 1.25rem;
+    font-size: 14px;
+}
