@@ -1,3 +1,8 @@
 .player__body {
-    display: flex;
+	display: flex;
+}
+.player__player {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }

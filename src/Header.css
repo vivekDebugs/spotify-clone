@@ -1,34 +1,74 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 2rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 2rem;
+	position: relative;
 }
 
 .header__left {
-    flex: .5;
-    min-width: 4.5rem;
-    background: white;
-    color: grey;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    padding: .5rem;
+	flex: 0.5;
+	min-width: 4.5rem;
+	background: white;
+	color: grey;
+	border-radius: 2rem;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
 }
 
 .header__left > input {
-    border: none;
-    width: 100%;
+	border: none;
+	width: 100%;
 }
 
 .header__left > input:focus {
-    outline: none;
+	outline: none;
 }
 
 .header__right {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .header__right > h4 {
-    margin: 0 .5rem;
+	margin: 0 0.5rem;
+}
+
+.header__searchResults.show {
+	position: absolute;
+	top: 100%;
+	background-color: black;
+	opacity: 0.95;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 30rem;
+	min-width: 30rem;
+	border-radius: 0.5rem;
+	margin: 0.25rem;
+	padding: 0.5rem;
+}
+
+.header__searchResults::-webkit-scrollbar {
+	display: none;
+}
+
+.header__searchResults > div {
+	display: flex;
+	align-items: center;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+
+.header__searchResults > div:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header__searchResults > div > img {
+	height: 4rem;
+	width: 4rem;
+	margin: 0.5rem;
+}
+
+.header__track_artist {
+	color: #b3b3b3;
 }
