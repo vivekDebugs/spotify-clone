@@ -6,7 +6,7 @@ import SpotifyWebApi from 'spotify-web-api-js'
 import Player from './Player'
 import { useStateValue } from './StateProvider'
 import {
-	SET_PLAYLIST,
+	SET_FEATURED_PLAYLISTS,
 	SET_PLAYLISTS,
 	SET_SPOTIFY,
 	SET_TOKEN,
@@ -50,34 +50,23 @@ const App = () => {
 					})
 				})
 
-				await spotify.getPlaylist('37i9dQZEVXcDpJImvG9RQf').then(response => {
-					dispatch({
-						type: SET_PLAYLIST,
-						playlist: response,
-					})
+				// gets featured playlists
+				const res = await fetch(
+					'https://api.spotify.com/v1/browse/featured-playlists',
+					{
+						headers: { Authorization: 'Bearer ' + _token },
+					}
+				)
+				const data = await res.json()
+
+				dispatch({
+					type: SET_FEATURED_PLAYLISTS,
+					featuredPlaylists: data,
 				})
 			}
 		}
 
-		const getUserPlaylists = async () => {
-			// gets user playlists
-			await fetch(`https://api.spotify.com/v1/users/${user?.id}/playlists`, {
-				headers: { Authorization: 'Bearer ' + token },
-			})
-
-			// gets featured playlists
-			const res = await fetch(
-				'https://api.spotify.com/v1/browse/featured-playlists',
-				{
-					headers: { Authorization: 'Bearer ' + token },
-				}
-			)
-			const data = await res.json()
-			console.log('featuerd playlists', data)
-		}
-
 		init()
-		getUserPlaylists()
 	}, [token, dispatch, user])
 
 	return <div className='app'>{token ? <Player /> : <Login />}</div>

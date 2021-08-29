@@ -1,0 +1,35 @@
+.playlistCard {
+	width: 16rem;
+	padding: 1rem;
+	margin: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #171717;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+.playlistCard:hover {
+	background-color: #212121;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.playlistCard > div {
+	width: 95%;
+}
+
+.playlistCard > div > img {
+	width: 100%;
+	margin: 0 auto 1rem;
+	box-shadow: 2px 4px 55px 1px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 2px 4px 55px 1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 2px 4px 55px 1px rgba(0, 0, 0, 0.75);
+}
+
+.playlistCard > div > p {
+	color: #b3b3b3;
+	font-size: 14px;
+	margin: 0.25rem 0;
+}

@@ -1,0 +1,49 @@
+.playlist__info {
+	display: flex;
+	align-items: flex-end;
+	padding: 0.5rem;
+}
+
+.playlist__info > img {
+	object-fit: contain;
+	width: 12rem;
+	height: 12rem;
+	margin: 0 1.25rem;
+	box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.playlist__infoText {
+	flex: 1;
+}
+
+.playlist__infoText > h2 {
+	font-size: 3rem;
+	margin: 0 0 0.75rem;
+}
+
+.playlist__infoText > p {
+	font-size: 14px;
+}
+
+.playlist__icons {
+	display: flex;
+	align-items: center;
+}
+
+.playlist__icons > .MuiSvgIcon-root {
+	margin: 0 1.25rem;
+}
+
+.playlist__shuffle {
+	font-size: 5rem !important;
+	margin: 3rem 1.25rem 1.25rem;
+}
+
+.playlist__shuffle:hover {
+	transform: scale(1.08) !important;
+	transition: transform 0.2s ease-in;
+}
+
+.playlist__songs {
+	margin: 1.25rem -2rem;
+}

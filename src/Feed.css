@@ -1,0 +1,4 @@
+.featuredPlaylistsContainer {
+	display: flex;
+	flex-wrap: wrap;
+}

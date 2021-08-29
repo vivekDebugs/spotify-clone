@@ -1,69 +1,18 @@
 .body {
-    height: 100vh;
-    flex: .8;
-    background: linear-gradient(#5b5773, rgba(0, 0, 0, 1));
-    color: white;
-    padding: 2rem 2rem 5rem;
-    overflow-y: overlay;
+	height: 100vh;
+	flex: 0.8;
+	background: linear-gradient(#5b5773, rgba(0, 0, 0, 1));
+	color: white;
+	padding: 2rem 2rem 5rem;
+	overflow-y: overlay;
 }
 
 .body::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 .body::-webkit-scrollbar-track {
-    background: transparent;
+	background: transparent;
 }
 .body::-webkit-scrollbar-thumb {
-    background: grey;
-}
-
-.body__info {
-    display: flex;
-    align-items: flex-end;
-    padding: .5rem;
-}
-
-.body__info > img {
-    object-fit: contain;
-    width: 12rem;
-    height: 12rem;
-    margin: 0 1.25rem;
-    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
-}
-
-.body__infoText {
-    flex: 1;
-}
-
-.body__infoText > h2 {
-    font-size: 3rem;
-    margin: 0 0 .75rem;
-}
-
-.body__infoText > p {
-    font-size: 14px;
-}
-
-.body__icons {
-    display: flex;    
-    align-items: center;
-}
-
-.body__icons > .MuiSvgIcon-root {
-    margin: 0 1.25rem;
-}
-
-.body__shuffle {
-    font-size: 5rem !important;
-    margin: 3rem 1.25rem 1.25rem;
-}
-
-.body__shuffle:hover {
-    transform: scale(1.08) !important;
-    transition: transform .2s ease-in;
-
-}
-
-.body__songs {
-    margin: 1.25rem -2rem;
+	background: grey;
 }

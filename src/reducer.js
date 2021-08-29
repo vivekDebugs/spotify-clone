@@ -5,15 +5,19 @@ export const initialState = {
 	playing: false,
 	item: null,
 	playlist: null,
+	featuredPlaylists: null,
+	showFeed: true,
 }
 
 export const SET_USER = 'SET_USER'
 export const SET_TOKEN = 'SET_TOKEN'
+export const SET_PLAYLIST = 'SET_PLAYLIST'
 export const SET_PLAYLISTS = 'SET_PLAYLISTS'
 export const SET_ITEM = 'SET_ITEM'
 export const SET_PLAYING = 'SET_PLAYING'
 export const SET_SPOTIFY = 'SET_SPOTIFY'
-export const SET_PLAYLIST = 'SET_PLAYLIST'
+export const SET_FEATURED_PLAYLISTS = 'SET_FEATURED_PLAYLISTS'
+export const SET_SHOW_FEED = 'SET_SHOW_FEED'
 
 const reducer = (state, action) => {
 	console.log(action)
@@ -59,6 +63,18 @@ const reducer = (state, action) => {
 			return {
 				...state,
 				playlist: action.playlist,
+			}
+
+		case SET_FEATURED_PLAYLISTS:
+			return {
+				...state,
+				featuredPlaylists: action.featuredPlaylists,
+			}
+
+		case SET_SHOW_FEED:
+			return {
+				...state,
+				showFeed: action.showFeed,
 			}
 
 		default:

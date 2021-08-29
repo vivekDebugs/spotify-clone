@@ -41,7 +41,7 @@ const Header = () => {
 			})
 			.catch(err => console.log(err))
 		return () => (cancel = true)
-	}, [searchText])
+	}, [searchText, spotify])
 
 	return (
 		<div className='header'>

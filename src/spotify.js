@@ -5,6 +5,7 @@ const clientId = 'e9b56a259717406184574bc1382acb86'
 
 const scopes = [
 	'streaming',
+	'app-remote-control',
 	'user-read-email',
 	'user-read-private',
 	'user-library-read',
