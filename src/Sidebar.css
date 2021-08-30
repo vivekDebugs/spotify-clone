@@ -2,7 +2,7 @@
 	height: 100vh;
 	min-width: 14rem;
 	flex: 0.2;
-	padding: 0 0.5rem 4rem;
+	padding: 0 0.5rem 6rem;
 	background: black;
 	display: flex;
 	flex-direction: column;
@@ -27,7 +27,7 @@
 }
 
 .sidebar__playlistsContainer::-webkit-scrollbar {
-	width: 10px;
+	width: 14px;
 }
 .sidebar__playlistsContainer::-webkit-scrollbar-track {
 	background: transparent;

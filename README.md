@@ -1,23 +1,20 @@
 # Spotify Clone
 
-Uses [spotify-web-api-js](https://www.npmjs.com/package/spotify-web-api-js) to pull the data from Spotify endpoints
+> **Build in progress** 🔨
 
-### `npm install`
-
-Installs all the required dependencies
-
-### `npm start`
-
-Runs the app in the development mode
-
-### `npm run build`
-
-Builds the app for production to the `build` folder
+- Authenticated with spotify
+- Uses [spotify-web-api-js](https://www.npmjs.com/package/spotify-web-api-js) to pull data from Spotify endpoints
 
 ## Sneak Peek
 
-![Spotify Login](https://user-images.githubusercontent.com/49686162/127441910-f870467e-c1f2-48d2-85e7-f9fed05d9f0f.png)
+![spotify-login](https://user-images.githubusercontent.com/49686162/131323132-1cabec7a-6a4a-42f4-a276-af527ad20056.png)
 
+![feed](https://user-images.githubusercontent.com/49686162/131313209-c2a39bd9-3f1e-47b9-ae0b-5b3a2c24873a.gif)
 
-![Spotify Weekly Playlist](https://user-images.githubusercontent.com/49686162/127442300-dacd6c51-126e-4e93-afac-8fe22779e2b3.png)
+![playlist-1](https://user-images.githubusercontent.com/49686162/131313198-b606db55-911a-4793-b6aa-7d23b357214e.gif)
 
+![playlist-2](https://user-images.githubusercontent.com/49686162/131313181-13bd7e93-14a1-4288-8d30-d8a4c678dd56.gif)
+
+![search-music](https://user-images.githubusercontent.com/49686162/131313226-41ff17e4-bfe2-4a05-a518-e7380fe45596.gif)
+
+![spotify-clone](https://user-images.githubusercontent.com/49686162/131315948-cba6aed6-1e83-40d9-ba24-595adec2ed9f.gif)

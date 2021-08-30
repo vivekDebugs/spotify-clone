@@ -1,9 +1,8 @@
 import React from 'react'
 import Body from './Body'
-// import Footer from './Footer'
+import Footer from './Footer'
 import './Player.css'
 import Sidebar from './Sidebar'
-import SpotifyPlayer from 'react-spotify-web-playback'
 import { useStateValue } from './StateProvider'
 
 const Player = ({ trackUri }) => {
@@ -16,11 +15,7 @@ const Player = ({ trackUri }) => {
 				<Body />
 			</div>
 			<div className='player__player'>
-				<SpotifyPlayer
-					token={token}
-					showSaveIcon
-					uris={trackUri ? [trackUri] : []}
-				/>
+				<Footer />
 			</div>
 		</div>
 	)

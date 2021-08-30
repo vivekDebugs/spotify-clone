@@ -3,6 +3,7 @@ import './Header.css'
 import { useStateValue } from './StateProvider'
 import SearchIcon from '@material-ui/icons/Search'
 import { Avatar } from '@material-ui/core'
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 
 const Header = () => {
 	const [{ user, spotify }] = useStateValue()
@@ -57,6 +58,7 @@ const Header = () => {
 			<div className='header__right'>
 				<Avatar src={user?.images[0]?.url} alt={user?.display_name} />
 				<h4>{user?.display_name}</h4>
+				<ArrowDropDownIcon />
 			</div>
 			<div className={`header__searchResults ${showResults && 'show'}`}>
 				{searchResults.map((track, index) => (
